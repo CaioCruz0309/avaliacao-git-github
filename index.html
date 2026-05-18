@@ -2,44 +2,99 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,
-initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Avaliação Git e GitHub</title>
+
 <style>
 body {
-font-family: Arial, sans-serif;
-background-color: #f4f4f4;
-text-align: center;
-padding: 50px;
+    font-family: Arial, sans-serif;
+    background-color: #dbeafe;
+    text-align: center;
+    padding: 50px;
 }
-h1 {
-color: #24292e;
-}
-p {
-font-size: 18px;
 
-color: #333;
+h1 {
+    color: #24292e;
 }
+
+h2 {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+}
+
 .container {
-background: white;
-padding: 30px;
-border-radius: 10px;
-width: 60%;
-margin: auto;
-box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+.nome-aluno {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #111827;
+}
+
+#mensagem {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #16a34a;
+    font-weight: bold;
 }
 </style>
+
 </head>
+
 <body>
+
 <div class="container">
-<h1>Minha Avaliação de Git e GitHub</h1>
-<p>
-Este projeto foi criado para praticar versionamento
 
-utilizando
+    <h1>Projeto Atualizado de Git e GitHub</h1>
 
-Git, GitHub e Visual Studio Code.
-</p>
+    <h2>Versionamento de código com Git</h2>
+
+    <p>
+        Este projeto foi criado para praticar versionamento
+        utilizando Git, GitHub e Visual Studio Code.
+    </p>
+
+    <button onclick="mostrarMensagem()">Clique Aqui</button>
+
+    <p id="mensagem"></p>
+
+    <div class="nome-aluno">
+        Caio Cruz
+    </div>
+
 </div>
+
+<script>
+function mostrarMensagem() {
+    document.getElementById("mensagem").innerHTML = "Tenha um ótimo dia!";
+}
+</script>
+
 </body>
 </html>
